@@ -1,0 +1,174 @@
+/* ############### Landing Page styles ################### */
+.landing_page_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing_page {
+  width: 90%;
+  max-width: 600px;
+  height: 90%;
+  max-height: 500px;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  position: relative;
+}
+
+.landing_page h1 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.landing_page h2 {
+  font-size: 2rem;
+}
+.landing_page hr {
+  margin-top: 0.8rem;
+}
+.landing_page form {
+  display: grid;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.landing_page input {
+  display: block;
+  margin: 0.8rem auto;
+  width: 40%;
+  padding: 0.5rem;
+  border: none;
+  border-left: 2px solid #1e2022;
+}
+.landing_page input:focus {
+  outline: none;
+}
+
+.landing_page button {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #1e2022;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  border-radius: 0.5rem;
+}
+.landing_page button:hover {
+  color: #1e2022;
+  background-color: #ffffff;
+}
+
+.error_message {
+  font-family: "Oswald", sans-serif;
+  color: rgb(131, 0, 0);
+  display: inline-block;
+  width: 80%;
+  padding: 0.5rem;
+  position: absolute;
+  left: 10%;
+  bottom: 20%;
+  font-size: 1rem;
+  border: 1px solid rgb(255, 124, 124);
+  text-align: center;
+}
+/* ################## Weather Styles ################### */
+.weather_page {
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-row-gap: 0.7rem;
+  padding: 1rem;
+  justify-content: center;
+}
+.weather_row {
+  width: 90vw;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #1e2022;
+  color: #ffffff;
+  transition: 0.5s ease;
+}
+.weather_row_mod {
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  background-color: #ffffff;
+  color: #1e2022;
+  margin: auto;
+  margin-bottom: 0.5rem;
+}
+.weather_row:hover {
+  background-color: #52616b;
+  color: #ffffff;
+  border: none;
+}
+.weather_row span {
+  margin-left: 0.3rem;
+}
+.weather_row h3 {
+  font-size: 1.2rem;
+  border-right: 1px solid #ffffff;
+  padding-right: 0.3rem;
+}
+.weather_row_mod h4 {
+  font-size: 1rem;
+  border-right: 1px solid #000000;
+  padding-right: 0.3rem;
+}
+.weather_icon {
+  margin: auto 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+.temperature {
+  margin-right: 0.5rem;
+}
+
+/* ################## Loader Styles ################### */
+.lds-dual-ring {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  bottom: 20%;
+  left: 45%;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid #52616b;
+  border-color: #52616b transparent #52616b transparent;
+  animation: lds-dual-ring 1.5s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
